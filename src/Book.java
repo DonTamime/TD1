@@ -1,8 +1,10 @@
+// Exercice 1
 public class Book {
     private String title;
     private String author;
     private int numberOfPages;
     private final static int DEFAULT_NUMBER_OF_PAGES = 5;
+    private final static boolean borrowed;
 
     public String getTitle() {
         return title;
@@ -45,7 +47,15 @@ public class Book {
         Book book3 = new Book("Hunter x Hunter", "Je sais plus",150);
         System.out.println("Book 3 : " + book3.getTitle() + ", " + book3.getNumberOfPages() + " pages.");
     }
+    //Exercice 2
+public boolean isBorrowed() {
+        return borrowed;
+}
+public void setBorrowed(boolean borrowed) {
+        borrowed = isBorrowed();
+}
     }
+
 
 
 
